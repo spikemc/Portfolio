@@ -1,0 +1,50 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wallop-slider {
+  width: 100%;
+}
+
+.wallop-slider__list {
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.wallop-slider__item {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.wallop-slider__item img {
+  display: block;
+  width: 100%;
+}
+
+.wallop-slider__item--current {
+  display: block;
+  position: static;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+.btn {
+  font-family: 'Voltaire', Arial;
+  background: #ffffff;
+  color: #2B2A30;
+  border: 2px solid #2B2A30;
+  -webkit-appearance: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  line-height: 10px;
+  margin-top: 20px;
+}
