@@ -43,7 +43,9 @@
       <div class="row">
         <div class="col-md-8 contact">
           <h2 class="text-muted">Links</h2>
-            <p>email: <a href="mailto:spikemccue@gmail.com">spikemccue@gmail.com</a></p>
+            <p>email: <a href="mailto:spikemccue@gmail.com">spikemccue@gmail.com</a> <button class="btn" data-clipboard-text="spikemccue@gmail.com">
+    Copy to clipboard
+          </button></p>
             <p>tumblr: <a href="http://spikespikespike.tumblr.com">spike mccue</a></p>            
             
         </div>
@@ -54,5 +56,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+     <script>
+    var btn = document.getElementById('btn');
+    var clipboard = new ClipboardJS(btn);
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
   </body>
 </html>
