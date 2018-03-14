@@ -18,7 +18,7 @@
     <![endif]-->
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="../dist/clipboard.min.js"></script>
      <script>
     var btn = document.getElementById('btn');
     var clipboard = new ClipboardJS(btn);
@@ -54,9 +54,9 @@
       <div class="row">
         <div class="col-md-8 contact">
           <h2 class="text-muted">Links</h2>
-            <p>email: <a href="mailto:spikemccue@gmail.com">spikemccue@gmail.com</a> <button class="btn" data-clipboard-text="spikemccue@gmail.com">
-    Copy to clipboard
-          </button></p>
+            <p>email: <a href="mailto:spikemccue@gmail.com">spikemccue@gmail.com</a>  <div id="btn" data-clipboard-text="spikemccue@gmail.com">
+        <span>Copy</span>
+    </div></p>
             <p>tumblr: <a href="http://spikespikespike.tumblr.com">spike mccue</a></p>            
             
         </div>
