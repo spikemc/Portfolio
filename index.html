@@ -18,6 +18,17 @@
     <![endif]-->
   </head>
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+     <script>
+    var btn = document.getElementById('btn');
+    var clipboard = new ClipboardJS(btn);
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
@@ -56,16 +67,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-     <script>
-    var btn = document.getElementById('btn');
-    var clipboard = new ClipboardJS(btn);
-    clipboard.on('success', function(e) {
-        console.log(e);
-    });
-    clipboard.on('error', function(e) {
-        console.log(e);
-    });
-    </script>
+   
   </body>
 </html>
