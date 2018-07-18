@@ -44,13 +44,13 @@
       <div class="row">
         <div class="col-md-8 contact">
           <h2 class="text-muted">Links</h2>
-            <p>email: <a href="mailto:spikemccue@gmail.com">spikemccue@gmail.com</a> <button class="btn btn-default" data-clipboard-text="spikemccue@gmail.com">Copy to clipboard</button></p>
+            <p>email: <a href="mailto:spikemccue@gmail.com">spikemccue@gmail.com</a> <button class="btn btn-default" data-clipboard-text="spikemccue@gmail.com" aria-label="Copied!">Copy to clipboard</button></p>
             <p>photographs: <a href="http://spikespikespike.tumblr.com">spike mccue</a></p>            
             
         </div>
       </div>
     </div>
-
+    <!-- copy to clipboard functionality from http://clipboardjs.com -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -60,7 +60,7 @@
 
     <!-- 3. Instantiate clipboard by passing a HTML element -->
     <script>
-     var clipboard = new ClipboardJS('.btn');
+    var clipboard = new ClipboardJS('.btn');
     clipboard.on('success', function(e) {
         console.log(e);
     });
