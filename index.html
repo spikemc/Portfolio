@@ -7,8 +7,8 @@
     <title>Spike McCue - About</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,54 +19,37 @@
   </head>
   <body>
     <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+        </ul>
+        <h1><span class="name"><a href="index.html">Spike McCue</a></span></h1>
+      </div>
+
       <div class="row">
-        <div class="col-lg-8 about mx-auto">
-          <h1 class="pb-4 pt-4"><span class="name">Spike McCue</span></h1>
-          <div class="pb-4">
-          <h2 class="text-muted pb-4">About</h2>
+        <div class="col-md-8 about">
+          <h2 class="text-muted">About</h2>
           <p>Spike McCue is an interaction designer/product manager living in Los Angeles, California. He holds a graduate degree from NYU's <a href="http://itp.nyu.edu/itp/">Interactive Telecommunications Program.</a> </p>
           <p>Most recently, he was the Associate Director of UX at  <a href="http://mrm-mccann.com/en/index.html">MRM//McCann</a>.</p>
-          <p><strong>*He is looking for new opportunities in Los Angeles.*</strong></p>
-          </div>
+          <p>He is looking for new opportunities in Los Angeles.</p>
 
-          <div class="pb-4">
-          <h2 class="text-muted pb-4">Work</h2>
-          <h3 class="text-muted pb-1">Case Studies</h3>
-            <ul class="pb-1">
-              <li>
-                <p><a href="work/operation-santa.html">Operation Santa</a></p>
-              </li>
-              <li>
-                <p><a href="work/Memorial-Sloan-Kettering.html">Memorial Sloan Kettering</a></p>
-              </li>
-            </ul>
-          <h3 class="text-muted pb-1">Additional Work</h3>
-            <ul>
-              <li>
-                <p><a href="work/POBOL.html">USPS: PO Boxes Online</a></p>
-              </li>
-              <li>
-                <p><a href="work/postal-store.html">USPS: Postal Store</a></p>
-              </li>
-              <li>
-                <p><a href="work/NYL-app.html">New York Lottery App</a></p>
-              </li>
-              <li>
-                <p><a href="work/yarn.html">Yarn</a></p>
-              </li>              
-            </ul>
-          </div>
-
-
-          <div>
-            <h2 class="text-muted">Links</h2>
-            <p>email: <a href="mailto:spikemccue@gmail.com">spikemccue@gmail.com</a> <button class="btn btn-default" data-clipboard-text="spikemccue@gmail.com" aria-label="Copied!">Copy to clipboard</button></p>
-            <p>photographs: <a href="http://spikespikespike.tumblr.com">spike mccue</a></p>            
-            
-          </div>
         </div>
       </div>
       
+      <div class="row">
+        <div class="col-md-8 about">
+          <h2 class="text-muted">UX Portfolio</h2>
+          <p>UX portfolio available upon request. Get in touch :).</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 contact">
+          <h2 class="text-muted">Links</h2>
+            <p>email: <a href="mailto:spikemccue@gmail.com">spikemccue@gmail.com</a> <button class="btn btn-default" data-clipboard-text="spikemccue@gmail.com" aria-label="Copied!">Copy to clipboard</button></p>
+            <p>photographs: <a href="http://spikespikespike.tumblr.com">spike mccue</a></p>            
+            
+        </div>
+      </div>
     </div>
     <!-- copy to clipboard functionality from http://clipboardjs.com -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -74,7 +57,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
    <!-- 2. Include library -->
-    <script src="dist/clipboard.min.js"></script>
+    <script src="../dist/clipboard.min.js"></script>
 
     <!-- 3. Instantiate clipboard by passing a HTML element -->
     <script>
@@ -86,11 +69,6 @@
     clipboard.on('error', function(e) {
         console.log(e);
     });
-    </script>
-    <script type="text/javascript">
-      window.addEventListener('load', function(){
-        console.log('Hi, thanks for checking the console to see what I messed up. As far as I know, I didnt mess anything up! This message will be really embarrassing if I did, in fact, mess something up! Hire me! Please! But for UX stuff, specifically!');
-      });
     </script>
   </body>
 </html>
