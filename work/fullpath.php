@@ -1,3 +1,3 @@
-<?php echo 
-getcwd(); 
+<?php
+echo __FILE__;
 ?>
